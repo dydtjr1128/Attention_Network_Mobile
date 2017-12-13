@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_main"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="이름을 입력해 주세요."/>
+        <EditText
+            android:id="@+id/setting_activity_editText"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="0.7"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:textSize="25sp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_google_signin_btn_text_light_focused"
+        android:onClick="moveMainActivity"
+        android:text="다음"/>
+
+</RelativeLayout>
+
